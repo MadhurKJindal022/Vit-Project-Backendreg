@@ -11,7 +11,7 @@ app.use(express.json());
 
 const dbConnect = async () => {
   try {
-    await mongoose.connect("mongodb+srv://madhurkjindal:tX0nCfXAPo5JEiGv@cluster0.wmo8dlz.mongodb.net//usersDB");
+    await mongoose.connect("mongodb+srv://madhurkjindal:tX0nCfXAPo5JEiGv@cluster0.wmo8dlz.mongodb.net/usersDB");
     console.log("Database Connected");
   } catch (error) {
     console.log("error in db connection");
